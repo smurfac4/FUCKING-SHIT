@@ -12,7 +12,7 @@ using namespace std;
 void ShellSort(int n, int mass[]){
     int i, j, step;
     int tmp;
-    for (step = n / 2; step > 0; step /= 2)
+    for (step = n / 2; step > 0; step /= 2){
         for (i = step; i < n; i++)
         {
             tmp = mass[i];
@@ -25,8 +25,9 @@ void ShellSort(int n, int mass[]){
             }
             mass[j] = tmp;
         }
+    }
 }
- 
+
 int main(){
     SetConsoleOutputCP(CP_UTF8);
     int N;
@@ -40,6 +41,9 @@ int main(){
         mass[i] = rand();
     //сортировка методом Шелла
     ShellSort(N, mass);
+    for(int i = 0;i<N;i++){
+        cout << mass[i] << " ";
+    }
     //освобождение памяти
     free(mass);
     _getch();
