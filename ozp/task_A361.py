@@ -18,8 +18,23 @@ import traceback
 
 
 def apple_share(n):
-    # Тело функции
-    return []
+    k = [[0,i+1,i+1] for i in range(6)]
+    k1 = [0 for i in range(6)]
+    c = 5
+    for i in range(n):
+        for i in range(6):
+            if k[i][1]==k[c][1]:
+                c = i
+                break
+        k[c][0]+=1
+        k1[k[c][2]-1]+=1
+        k[c][1]= k[c][2]/(k[c][0]+1)
+        k = sorted(k,key = lambda k : k[1])
+        c = -1
+        print(k,'\n',k1)
+    print(k1)
+    print('\n')
+    return k1
 
 
 # Тесты

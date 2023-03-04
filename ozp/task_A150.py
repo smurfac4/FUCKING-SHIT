@@ -14,7 +14,12 @@ import traceback
 
 def opposite_house(address, n):
     # Тело функции
-    return 0
+    h2 = [i for i in range(1,n*2,2)]
+    h1 = [i for i in reversed(range(2,n*2+1,2))]
+    if address%2== 0:
+        return h2[h1.index(address)]
+    else:
+        return h1[h2.index(address)]
 
 
 # Тесты

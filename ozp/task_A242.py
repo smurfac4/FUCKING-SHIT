@@ -9,8 +9,12 @@ import traceback
 
 
 def max_3_sum(arr):
-    # Тело функции
-    return 0
+    max1=0
+    for i in range(len(arr)-2):
+        i1 = i+3
+        if max1 < sum(arr[i:i1]):
+            max1 = sum(arr[i:i1])
+    return max1
 
 
 # Тесты
