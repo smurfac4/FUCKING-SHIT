@@ -49,4 +49,6 @@ films = [{"id" : 1, "title" : "Бойцовский клуб", "year" : "1999","
          {"id" : 8, "title" : "Ковбой из Копенгагена", "year" : "2022","IMDB": 6.7,"country":"Denmark"},
          {"id" : 9, "title" : "1923 ", "year" : "2022","IMDB": 8.5,"country":"USA"},
          {"id" : 10, "title" : "Пловчихи", "year" : "2022","IMDB": 7.4,"country":"USA"}]
-k2(films,2)
+
+
+
