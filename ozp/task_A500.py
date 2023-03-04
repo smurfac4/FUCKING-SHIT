@@ -49,7 +49,7 @@ films = [{"id" : 1, "title" : "Бойцовский клуб", "year" : "1999","
          {"id" : 8, "title" : "Ковбой из Копенгагена", "year" : "2022","IMDB": 6.7,"country":"Denmark"},
          {"id" : 9, "title" : "1923 ", "year" : "2022","IMDB": 8.5,"country":"USA"},
          {"id" : 10, "title" : "Пловчихи", "year" : "2022","IMDB": 7.4,"country":"USA"}]
-
+p = int(input())
 try:
     assert k1(films) == [{'id': 1, 'title': 'Бойцовский клуб', 'year': '1999', 'IMDB': 8.8, 'country': 'USA'}, {'id': 2, 'title': 'Быстрее пули ', 'year': '2022', 'IMDB': 7.4, 'country': 'USA'}, {'id': 3, 'title': 'Кот в сапогах 2', 'year': '2022', 'IMDB': 7.8, 'country': 'USA'}, {'id': 4, 'title': 'Памела: История любви', 'year': '2023', 'IMDB': 7.3, 'country': 'USA'}, {'id': 5, 'title': 'Патхан', 'year': '2023', 'IMDB': 6.6, 'country': 'India'}, {'id': 6, 'title': 'Вавилон', 'year': '2022', 'IMDB': 7.6, 'country': 'USA'}, {'id': 7, 'title': 'Брахмастра, часть 1: Шива', 'year': '2022', 'IMDB': 5.5, 'country': 'India'}, {'id': 8, 'title': 'Ковбой из Копенгагена', 'year': '2022', 'IMDB': 6.7, 'country': 'Denmark'}, {'id': 9, 'title': '1923 ', 'year': '2022', 'IMDB': 8.5, 'country': 'USA'}, {'id': 10, 'title': 'Пловчихи', 'year': '2022', 'IMDB': 7.4, 'country': 'USA'}]
     assert k2(films,4) == {'id': 4, 'title': 'Памела: История любви', 'year': '2023', 'IMDB': 7.3, 'country': 'USA'}
