@@ -25,7 +25,6 @@ int main() {
   cin >> key; // считываем ключ
   bool flag = false;
   int  mid ;
- 
   if (flag){
     cout << "Индекс элемента " << key << " в массиве равен: " << mid;
   }else{
