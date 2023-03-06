@@ -44,11 +44,11 @@ int main(){
     while(!file.eof()){
         string h;
         getline(file, h);
-        str.append(" ");
         str.append(h);
     }
     int m = str.size();
     cout << finds(str, p,n,m);
     file.close();
+    cout << endl;
     return 0;
 }
