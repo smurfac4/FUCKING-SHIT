@@ -17,10 +17,10 @@ int finds(string spr1, string substring,int n,int m){
         for(int j = 0;j <n;j++){
             if (spr1[i]==substring[j]){
                 y++;
-                i++;
                 if (y==1){
                     u = i;
                 }
+                i++;
                 if(y == n){
                     return u;
                 }
