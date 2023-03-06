@@ -25,7 +25,7 @@ int main() {
   cin >> key; // считываем ключ
   bool flag = false;
   int l = 0; // левая граница
-  int r = 9; // правая граница
+  int r = N-1; // правая граница
   int mid;
   while ((l <= r) && (flag != true)) {
     mid = (l + r) / 2; // считываем срединный индекс отрезка [l,r]
