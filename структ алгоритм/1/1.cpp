@@ -3,7 +3,6 @@
 #include <iostream>
 #include <math.h>
 #include <cmath>
-#include <windows.h>
 
 using namespace std;
 
@@ -28,7 +27,6 @@ void printmas(int arr[],int N) { // вывод массива
 int main() {
     int N;
     long double time = 0.0; 
-    SetConsoleOutputCP(CP_UTF8);
     cout << "Количество элементов в массиве: "; cin >> N;
     int* arr = new int [N];
     for (int i = 0; i < N; i++) { //заполнение массива рандомными значениями
