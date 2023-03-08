@@ -3,10 +3,7 @@
 #include <iostream>
 #include <math.h>
 #include <cmath>
-#include <windows.h>
 #include <malloc.h>
-#include <conio.h>
-
 using namespace std;
  
 void ShellSort(int n, int mass[]){
@@ -32,7 +29,6 @@ void ShellSort(int n, int mass[]){
 }
 
 int main(){
-    SetConsoleOutputCP(CP_UTF8);
     int N;
     long double time = 0.0; 
     printf("Input N: ");

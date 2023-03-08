@@ -5,12 +5,10 @@
 #include <iostream>
 #include <math.h>
 #include <cmath>
-#include <windows.h>
 
 using namespace std;
  
 int main() {
-  SetConsoleOutputCP(CP_UTF8);
   int N;
   cin >>N;
   int arr[N]; // создали массив на 10 элементов

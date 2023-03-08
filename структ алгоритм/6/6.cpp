@@ -5,7 +5,6 @@
 #include <iostream>
 #include <math.h>
 #include <cmath>
-#include <windows.h>
 # include <string.h>
 
 using namespace std;
@@ -35,7 +34,6 @@ int finds(string spr1, string substring,int n,int m){
 
 
 int main(){
-    SetConsoleOutputCP(CP_UTF8);
     string str;
     ifstream file("t1.txt");
     string p;
