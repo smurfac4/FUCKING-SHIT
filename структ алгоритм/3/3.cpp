@@ -57,28 +57,28 @@
 //     cout << endl<<time + (double)(end - begin) / CLOCKS_PER_SEC;
 //     return 0;
 // }
-// Урок 57. Сортировка слиянием
+// Сортировка слиянием
 #include <iostream>
 #include <vector>
 using namespace std;
 int k = 0,k1 =0 ;
 
-void mergeSort(vector<int> &a, size_t start, size_t end)
+void mergeSort(vector<int> &a, size_t start, size_t end)//Объявляется функция mergeSort, которая принимает на вход ссылку на вектор a, начальный и конечный индексы подмассива, который нужно отсортировать.
 {
-    if (end - start < 2){
+    if (end - start < 2){//сли длина подмассива меньше 2, то он уже отсортирован, поэтому функция завершается.
         return;
     }
-    if (end - start == 2){
+    if (end - start == 2){// Если длина подмассива равна 2, то сравниваются элементы и, если нужно, они меняются местами.
         if (a[start] > a[start + 1])
             swap(a[start], a[start + 1]);
         return;
-    }
+    }//Рекурсивно вызывается функция mergeSort для левой и правой половин подмассива
     mergeSort(a, start, start + (end - start) / 2);
     mergeSort(a, start + (end - start) / 2, end);
-    vector<int> b;
+    vector<int> b;//Задаются начальные значения переменных b1, e1 и b2 для разделения подмассива на две половины.
     size_t b1 = start;
     size_t e1 = start + (end - start) / 2;
-    size_t b2 = e1;
+    size_t b2 = e1;//В цикле происходит слияние двух отсортированных половин подмассива в один отсортированный подмассив b.
     while (b.size() < end - start)
     {
         if (b1 >= e1 || (b2 < end && a[b2] <= a[b1]))
@@ -91,7 +91,7 @@ void mergeSort(vector<int> &a, size_t start, size_t end)
             b.push_back(a[b1]);
             ++b1;
         }
-    }
+    }//Отсортированный подмассив b копируется обратно в исходный вектор a.
     for (size_t i = start; i < end; ++i){
         a[i] = b[i - start];
     }
@@ -101,7 +101,7 @@ int main(){
     vector<int> v;
     for (int i = 0; i < 20; ++i)
         v.push_back(i);
-    for (size_t i = 0; i < v.size(); ++i)
+    for (size_t i = 0; i < v.size(); ++i)//В функции main создается вектор v и заполняется числами от 0 до 19 в случайном порядке.
         swap(v[i], v[rand() % (v.size() - i) + i]);
     for (auto i: v)
         cout << i << " ";
