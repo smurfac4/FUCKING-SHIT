@@ -36,6 +36,7 @@ def apple_share(n):
     print('\n')
     return k1
 
+
 try:
     assert apple_share(1) == [0, 0, 0, 0, 0, 1]
     assert apple_share(4) == [0, 0, 1, 1, 1, 1]
